@@ -1,0 +1,25 @@
+/** ====================
+ *  Auth css
+=======================*/
+.auth_section{
+    width: 60%;
+    padding-top: 50px;
+    margin: 0 auto;
+    background: #fff;
+    .title_bx{
+        p{
+            font-size: 18px;
+            font-weight: 500;
+            margin-bottom: 0.8rem;
+            text-transform: capitalize;
+            color: rgba(9, 9, 55, 0.6);
+        }
+        h3{
+            color: #090937;
+            font-weight: 600;
+            font-size: 1.4rem;
+            margin-bottom: 2rem;
+        }
+    }
+}
+

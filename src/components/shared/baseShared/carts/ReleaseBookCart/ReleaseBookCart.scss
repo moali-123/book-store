@@ -1,0 +1,90 @@
+.book_item {
+    position: relative;
+    transition: 0.4s;
+    margin-bottom: 20px;
+
+    .img_holder {
+        width: 100%;
+        padding: 20px;
+        background-color: #fff;
+        -webkit-box-shadow: 0px 0px 5px 1px rgba(117, 117, 117, 0.65);
+        -moz-box-shadow: 0px 0px 5px 1px rgba(117, 117, 117, 0.65);
+        box-shadow: 0px 0px 5px 1px rgba(117, 117, 117, 0.65);
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .text {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .name {
+            font-size: 17px;
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: var(--dark_purple_color);
+        }
+
+        .writer {
+            color: #888888;
+            font-size: 14px;
+        }
+
+        .price {
+            margin-top: 10px;
+            font-weight: 600;
+            color: var(--main_orange_color);
+        }
+    }
+
+    .add_to_cart_btn {
+        color: #fff;
+        width: 80%;
+        height: 44px;
+        margin: 0 10%;
+        padding: 0px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        position: absolute;
+        top: calc(50% - 80px);
+        background-color: var(--main_orange_color);
+        display: none;
+        transition: 0.4s;
+
+        &:lang(en) {
+            text-transform: uppercase;
+        }
+    }
+    .see_more_btn{
+        color: var(--main_orange_color);
+        width: 80%;
+        height: 44px;
+        margin: 0 10%;
+        padding: 0px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        position: absolute;
+        top: calc(50% - 22px);
+        background-color: #fff;
+        display: none;
+        transition: 0.4s;
+
+        &:lang(en) {
+            text-transform: uppercase;
+        }
+    }
+
+    &:hover .add_to_cart_btn,
+    &:hover .see_more_btn {
+        display: flex;
+    }
+}

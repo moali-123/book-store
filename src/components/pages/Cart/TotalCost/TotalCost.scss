@@ -1,0 +1,55 @@
+#cost_bx{
+    .cost_container{
+        margin-bottom: 40px;
+        background-image: linear-gradient(to bottom, #FFE5E5, #F5FFFE);
+        .content_bx{
+            h3{
+                font-size: 19px;
+                font-weight: 600;
+                color: var(--dark_purple_color);
+            }
+            ul{
+                padding: 0;
+                margin: 0;
+                list-style: none;
+                li{
+                    padding: 15px 0;
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    font-size: 15px;
+                    justify-content: space-between;
+                    border-bottom: 1px solid #BEBEBE;
+                    &:last-child{
+                        border-bottom: 0;
+                        padding-bottom: 0;
+                    }
+                    .title,
+                    .data{
+                        font-weight: 500;
+                        color: var(--dark_purple_color);
+                    }
+                }
+            }
+        }
+    }
+    .cart_btn{
+        width: 100%;
+        button{
+            width: 100%;
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            gap: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-size: 16px;
+            font-weight: 400;
+            background-color: var(--main_orange_color);
+            &:lang(en){
+                text-transform: capitalize;
+                font-family: "Poppins", sans-serif;
+            }
+        }
+    }
+}

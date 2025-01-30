@@ -1,0 +1,23 @@
+#filter_bx{
+    .range_bx{
+        display: flex;
+        gap: 7px;
+        align-items: center;
+        .range_separator{
+            width: 25px;
+            height: 1px;
+            background-color: #b8b8b8;
+        }
+    }
+    .filter_btn{
+        width: 100%;
+        color: #fff;
+        margin-top: 15px;
+        text-transform: capitalize;
+        background-color: var(--dark_purple_color);
+    }
+    .panel_title{
+        font-weight: 500;
+        color: var(--dark_purple_color);
+    }
+}

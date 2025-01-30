@@ -1,0 +1,18 @@
+#Details_bx{
+    .cost_container{
+        margin-bottom: 40px;
+        background-image: linear-gradient(to right, #FFE5E5, #F5FFFE);
+        .content_bx{
+            h3{
+                font-size: 19px;
+                font-weight: 600;
+                color: var(--dark_purple_color);
+            }
+        }
+    }
+    .table_action_btn{
+        font-size: 24px;
+        cursor: pointer;
+        color: var(--main_orange_color);
+    }
+}

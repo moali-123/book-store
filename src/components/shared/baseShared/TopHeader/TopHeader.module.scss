@@ -1,0 +1,40 @@
+/** ====================
+ *  Top Header css
+=======================*/
+.top_header_bx{
+    width: 100%;
+    padding: 10px 0;
+    background-color: var(--dark_purple_color);
+    .container_bx{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .start_content{
+        color: #fff;
+        font-size: 14px;
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        img{
+            width: 12px;
+        }
+    }
+    .end_content{
+        display: flex;
+        gap: 20px;
+        color: #fff;
+        align-items: center;
+        cursor: pointer;
+        .item{
+            img{
+                width: 15px;
+            }
+            &:first-child{
+                img{
+                    width: 9px;
+                }
+            }
+        }
+    }
+}

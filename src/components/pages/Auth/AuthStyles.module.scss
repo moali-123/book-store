@@ -1,0 +1,80 @@
+/** ====================
+ *  Auth css
+=======================*/
+.auth_form_bx{
+    width: 100%;
+    .form_item{
+        margin: 8px 0;
+        width: 100%;
+    }
+    .btn_bg{
+        background-color: var(--light_purple_color) !important;
+    }
+    label{
+        font-weight: 600;
+        margin-bottom: 5px;
+        color: var(--main_black);
+        &:lang(en){
+            text-transform: capitalize;
+        }
+    }
+    .remember_check{
+        span{
+            font-weight: 500;
+            color: var(--main_purple_color);
+            &:lang(en){
+                font-family: "Poppins", sans-serif;
+            }
+            &:lang(ar){
+                font-family: "Tajawal", sans-serif;
+            }
+        }
+    }
+    .form_btns{
+        margin: 30px 0 50px; 
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        button{
+            height: 48px;
+            font-size: 16px;
+            font-weight: 500;
+            &:lang(en){
+                text-transform: capitalize;
+                font-family: "Poppins", sans-serif;
+            }
+            &:lang(ar){
+                font-family: "Tajawal", sans-serif;
+            }
+        }
+        .fill_btn{
+            background-color: var(--main_orange_color);
+        }
+        .outline_btn{
+            color: var(--main_purple_color);
+            border-color: var(--main_purple_color);
+        }
+    }
+    .forget_link{
+        font-size: 14px;
+        text-decoration: none;
+        color: var(--main_black);
+        font-weight: 500;
+        &:lang(en){
+            text-transform: capitalize;
+        }
+    }
+    .otp_bx{
+        input{
+            border-radius: 4px 4px 0 0;
+            background-color: var(--light_purple_color);
+        }
+        fieldset{
+            border-top: 0;
+            border-right: 0;
+            border-left: 0;
+            border-radius: 0;
+            border-bottom: 1px solid #949494;
+        }
+    }
+}

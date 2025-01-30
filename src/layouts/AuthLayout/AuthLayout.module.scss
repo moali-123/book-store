@@ -1,0 +1,75 @@
+/** ====================
+ *  Auth Layout css
+=======================*/
+body{
+    padding-right: 0 !important;
+    overflow: auto !important;
+}
+.auth_layout_bx{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: flex-end;
+    background-color: tomato;
+    .page_content{
+        width: 50%;
+        height: 100%;
+        padding-top: 90px;
+        background-color: #fff;
+        .logo_img{
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            img{
+                width: 90px;
+            }
+        }
+    }
+    .img_holder{
+        width: 50%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        inset-inline-start: 0;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top;
+        }
+    }
+    .language_bx{
+        position: absolute;
+        top: 30px;
+        inset-inline-end: 30px;
+    }
+    .choose_lang{
+        span{
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            cursor: pointer;
+            padding: 10px 15px;
+            color: var(--main_black);
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 6px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            img{
+                width: 30px;
+            }
+            &:lang(en){
+                font-weight: 600;
+                font-family: "Tajawal", sans-serif;
+            }
+            &:lang(ar){
+                font-weight: 500;
+                text-transform: capitalize;
+                font-family: "Poppins", sans-serif;
+            }
+        }
+    }
+}

@@ -1,0 +1,34 @@
+#latest_cart{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    .img_holder{
+        width: 100%;
+        img{
+            width: 100%;
+        }
+    }
+    .date{
+        color: #74642F;
+        font-size: 14px;
+    }
+    .name{
+        color: #173F5F;
+        font-size: 18px;
+        width: 80%;
+    }
+    .social{
+        width: 100%;
+        display: flex;
+        align-items: baseline;
+        justify-content: flex-end;
+        padding-top: 10px;
+        border-top: 1px solid #C8C8C8;
+        gap: 10px;
+        img{
+            max-width: 14px;
+            height: 14px;
+            filter: brightness(0) saturate(100%) invert(18%) sepia(14%) saturate(7093%) hue-rotate(227deg) brightness(97%) contrast(92%);
+        }
+    }
+}

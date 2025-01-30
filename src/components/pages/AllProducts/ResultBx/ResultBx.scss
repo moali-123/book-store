@@ -1,0 +1,42 @@
+#result_bx{
+    .search_items{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 40px;
+        justify-content: space-between;
+        .item{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--dark_purple_color);
+            font-weight: 500;
+            gap: 10px;
+            p{
+                margin-bottom: 0;
+            }
+            .grid_icons{
+                display: flex;
+                gap: 15px;
+                span{
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .list_bx{
+        .book_item{
+            display: flex;
+            gap: 50px;
+            .img_holder{
+                width: 333px;
+            }
+            .add_to_cart_btn,
+            .see_more_btn{
+                width: 263px;
+                margin: 0 35px;
+            }
+        }
+    }
+}

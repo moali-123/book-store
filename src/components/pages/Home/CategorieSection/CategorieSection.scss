@@ -1,0 +1,170 @@
+/*--- Categories section ---*/
+#categories_section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    .section_title {
+        width: calc(100% - 300px);
+        margin-bottom: 0px;
+        position: relative;
+        z-index: 999;
+
+        .sub_title {
+            font-weight: 600;
+            margin-bottom: 10px;
+            position: relative;
+            padding-inline-start: 35px;
+            color: var(--main_orange_color);
+
+            &::before {
+                content: '';
+                width: 25px;
+                height: 2px;
+                top: 12px;
+                position: absolute;
+                inset-inline-start: 0;
+                background-color: var(--main_orange_color);
+            }
+        }
+
+        h3 {
+            font-weight: 600;
+            font-size: 25px;
+            color: var(--dark_purple_color);
+        }
+    }
+
+    .more_btn {
+        text-align: center;
+        margin-top: 50px;
+
+        a {
+            color: var(--dark_purple_color);
+            text-decoration: none;
+            padding: 13px 25px;
+            border-radius: 7px;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            border: 1px solid var(--dark_purple_color);
+
+            img {
+                width: 10px;
+
+                &:lang(ar) {
+                    transform: rotate(180deg);
+                }
+            }
+
+            &:lang(en) {
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+#Category_slider {
+    margin-top: -60px;
+    padding-top: 85px;
+
+    .Category_item {
+        a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            text-decoration: none;
+
+            .image-item{
+                width: 100%;
+                height: 260px;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 12px;
+            }
+
+            .text {
+                font-weight: 600;
+                font-size: 18px;
+                color: var(--dark_purple_color);
+            }
+        }
+    }
+
+    .swiper-button-next,
+    .swiper-rtl .swiper-button-prev {
+        width: 48px;
+        height: 48px;
+        top: 5px;
+        border-radius: 50%;
+        margin-top: 0;
+        background-color: var(--main_orange_color);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid var(--main_orange_color);
+        &:lang(en){
+            right: 0;
+        }
+        &:lang(ar){
+            left: 70px;
+        }
+    }
+
+    .swiper-button-next:after,
+    .swiper-rtl .swiper-button-prev:after {
+        font-size: 0;
+        width: 25px;
+        height: 12px;
+        background-image: url(../../../../assets/images/svg/white-right-arrow.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        &:lang(ar){
+            transform: rotate(180deg);
+        }
+    }
+
+    .swiper-button-prev,
+    .swiper-rtl .swiper-button-next {
+        width: 48px;
+        height: 48px;
+        top: 5px;
+        margin-top: 0;
+        background-color: #fff;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #E5E3DA;
+        &:lang(en){
+            left: unset;
+            right: 70px;
+        }
+        &:lang(ar){
+            left: 0px;
+            right: unset;
+        }
+    }
+
+    .swiper-button-prev:after,
+    .swiper-rtl .swiper-button-next:after {
+        font-size: 0;
+        width: 25px;
+        height: 12px;
+        background-image: url(../../../../assets/images/svg/gray-left-arrow.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+
+    .swiper-button-prev.swiper-button-disabled,
+    .swiper-button-next.swiper-button-disabled {
+        opacity: 0.8;
+    }
+}

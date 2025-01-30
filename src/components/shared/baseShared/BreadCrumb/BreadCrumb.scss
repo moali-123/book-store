@@ -1,0 +1,20 @@
+#breadCrumb{
+    padding: 30px;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to right, #FFE5E5, #F5FFFE);
+    a{
+        text-decoration: none;
+        font-weight: 500;
+        color: var(--dark_purple_color);
+        &.active{
+            color: var(--dark_purple_color);
+        }
+    }
+    &:lang(en) a{
+        text-transform: uppercase;
+        font-family: "Poppins", sans-serif;
+    }
+}

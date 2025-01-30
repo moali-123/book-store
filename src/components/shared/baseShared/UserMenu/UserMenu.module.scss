@@ -1,0 +1,34 @@
+.end_content{
+    .nav_items{
+        .item{
+            padding: 2px 15px !important;
+            border-inline-end: 2px solid #E0E0E0;
+            line-height: 1;
+            height: fit-content;
+            &:last-child{
+                border-inline-end: 0;
+                padding-inline-end: 0 !important;
+            }
+            img{
+                width: 19px;
+                height: 19px;
+            }
+        }
+        .item.p-0{
+            padding: 0 !important;
+        }
+    }
+    .choose_lang{
+        span{
+            img{
+                width: 30px !important;
+                height: auto !important;
+            }
+        }
+    }
+    .logout_btn{
+        padding: 0;
+        border: 0;
+        background-color: transparent;
+    }
+}
